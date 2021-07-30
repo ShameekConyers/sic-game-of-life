@@ -21,10 +21,10 @@ command line.
 
 ## Source Code
 
-Code used to build this is found in the root/src folder, [more up to date source
-files can be found here]("https://github.com/ShameekConyers/siclib/tree/main/src/sicdev/game-of-life" "Title")
+Code used to build this is found in the root/src folder, <a href ="https://github.com/ShameekConyers/siclib/tree/main/src/sicdev/game-of-life">
+more up to date source files can be found here </a>
 
 ## TODO
 
-Right now there's no mouse interaction or restarting, thus those are next ot be
-implementing.
+Right now there's no mouse interaction or restarting, thus those are next to be
+implemented.
