@@ -11,13 +11,13 @@ alt="My Project GIF" width="600" height="400" />
 
 Currently theres' no interaction, you can just fire it up and see how the system
 evolves over time. Every time you run it the system will have a different start
-value.
+value. Based on Conway's "Game of Life" with a random number generator that
+introduces chaos with cells either spontaneously dieing or becomeng alive
 
 ## Installation instructions
 
 Since this was developed & compiled on my M1 Macbook only MacOS is supported
-currently. To Download simply grab the file sic-gol.out and run it from the
-command line.
+currently. To downloaf simply download the repo and click 'run.command'
 
 ## Source Code
 
