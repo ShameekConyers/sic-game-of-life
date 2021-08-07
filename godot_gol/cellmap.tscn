@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://alivecell.png" type="Texture" id=1]
+[ext_resource path="res://cellmap.gd" type="Script" id=2]
+[ext_resource path="res://roboto.tres" type="DynamicFont" id=3]
+[ext_resource path="res://theme.tres" type="Theme" id=4]
+
+[sub_resource type="TileSet" id=1]
+0/name = "alivecell.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 0, 0, 0, 1 )
+0/region = Rect2( 16, 0, 8, 8 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "alivecell.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 8, 0, 8, 8 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[node name="cellmap" type="TileMap"]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( -1, 0, 0 )
+script = ExtResource( 2 )
+WIDTH = 160
+HEIGHT = 100
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+anchor_left = -0.0575928
+anchor_top = -0.0115181
+anchor_right = -0.0575928
+anchor_bottom = -0.0115181
+margin_left = 250.0
+margin_top = 103.0
+margin_right = 599.0
+margin_bottom = 203.0
+custom_fonts/font = ExtResource( 3 )
+text = "PAUSED"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
